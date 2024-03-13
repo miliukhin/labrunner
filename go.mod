@@ -1,4 +1,4 @@
-module learn-rod
+module github.com/miliukhin/labrunner
 
 go 1.22.1
 
