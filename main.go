@@ -53,7 +53,7 @@ func RunTasks(page *rod.Page) error {
 			form, formerr := element.Element(".form-control")
 			radioBoxes, raderr := element.Elements("input[type='radio']")
 			if formerr == nil {
-	        		form.MustInput(string(result))
+	        		form.MustSelectAllText().MustInput(string(result))
 			} else if raderr == nil {
 				for len(result) > 0 && (result[len(result)-1] == '\n' || result[len(result)-1] == '\r') {
         				result = result[:len(result)-1]

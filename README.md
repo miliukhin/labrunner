@@ -5,5 +5,5 @@
 
 ```
 go mod tidy
-go run . <email> <password> -rod=show,devtools
+go run . <url> <email> <password> -rod=show,devtools
 ```
